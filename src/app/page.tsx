@@ -1,5 +1,5 @@
 const Home = () => {
-  return <div className="bg-black min-h-screen w-full"></div>;
+  return <div className=""></div>;
 };
 
 export default Home;
