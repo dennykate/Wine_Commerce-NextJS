@@ -90,9 +90,11 @@ const ProductDetails = ({ opened, close }: PropsType) => {
             <div className="w-full h-[1px] bg-gray-200 my-4" />
 
             <div className="flex items-center gap-4">
-              <p className="text-sm text-black font-[500]">Weights : </p>
+              <p className="text-sm text-black font-[500] whitespace-nowrap">
+                Weights :{" "}
+              </p>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center flex-wrap gap-2">
                 {productDetailsData?.variants?.map((data, index) => (
                   <button
                     key={index}

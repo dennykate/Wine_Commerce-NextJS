@@ -46,7 +46,7 @@ const ProductCard = () => {
 
           <div
             className="absolute top-0 left-0 px-[4px] py-[2px] bg-primary-500 text-white text-[10px] 
-        font-[500]"
+        font-[500] rounded-sm"
           >
             New Product
           </div>
