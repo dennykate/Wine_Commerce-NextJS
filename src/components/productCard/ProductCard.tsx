@@ -17,12 +17,19 @@ const ProductCard = () => {
       <div className="p-2 border border-gray-200 rounded-md hover:border-primary-500 group overflow-hidden">
         <div className="w-full relative">
           <Image
-            src="https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
+            src="https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
             alt="product-1"
             width={1024}
             height={1024}
             className="absolute top-0 left-0 opacity-0 group-hover:opacity-100
            transition-all duration-700 ease-in-out"
+          />
+
+          <Image
+            src="https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
+            alt="product-1"
+            width={1024}
+            height={1024}
           />
 
           <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
@@ -36,13 +43,6 @@ const ProductCard = () => {
               <IoSearch className="text-xl " />
             </button>
           </div>
-
-          <Image
-            src="https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
-            alt="product-1"
-            width={1024}
-            height={1024}
-          />
 
           <div
             className="absolute top-0 left-0 px-[4px] py-[2px] bg-primary-500 text-white text-[10px] 

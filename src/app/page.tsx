@@ -1,6 +1,7 @@
 import {
   Banner,
   BestSeller,
+  FeatureProducts,
   Hero,
   InfoSection,
   PopularCategories,
@@ -16,6 +17,7 @@ const Home = () => {
         <BestSeller />
         <PopularCategories />
         <Banner />
+        <FeatureProducts />
         <RecentlyAdded />
       </div>
     </>
