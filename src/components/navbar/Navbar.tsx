@@ -7,8 +7,8 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { RiCustomerService2Line, RiHandbagLine } from "react-icons/ri";
 
 import navbarData from "@/data/navbarData";
-import NavbarInfo from "./navbar/NavbarInfo";
-import { Sidebar } from "./sidebar";
+import { NavbarInfo } from "./";
+import { Sidebar } from "../sidebar";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);

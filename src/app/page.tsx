@@ -1,12 +1,13 @@
-import InfoSection from "@/components/home/InfoSection";
+import { Hero, InfoSection } from "@/components/home";
 
 const Home = () => {
   return (
-
-    <div className="bg-white min-h-screen w-full">
-      <InfoSection />
-    </div>
-
+    <>
+      <Hero />
+      <div className="sm:px-4 px-2">
+        <InfoSection />
+      </div>
+    </>
   );
 };
 
