@@ -7,5 +7,4 @@ export { default as RecentlyAdded } from "./recentlyAdded/RecentlyAdded";
 export { default as FeatureProducts } from "./featureProducts/FeatureProducts";
 export { default as Banner } from "./banner/BannerSection";
 export { default as Brands } from "./brands/Brands";
-
-
+export { default as DealsAndArrivals } from "./dealsAndArrivals/DealsAndArrivals";

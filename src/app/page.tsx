@@ -1,4 +1,3 @@
-
 import {
   Banner,
   BestSeller,
@@ -8,7 +7,8 @@ import {
   InfoSection,
   PopularCategories,
   RecentlyAdded,
-    PhotoSection
+  PhotoSection,
+  DealsAndArrivals,
 } from "@/components/home";
 
 const Home = () => {
@@ -18,9 +18,9 @@ const Home = () => {
       <div className="sm:px-4 px-2 ">
         <InfoSection />
         <BestSeller />
-
-        <PopularCategories/>
-        <PhotoSection/>
+        <PopularCategories />
+        <PhotoSection />
+        <DealsAndArrivals />
         <Banner />
         <FeatureProducts />
         <RecentlyAdded />
