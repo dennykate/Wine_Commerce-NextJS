@@ -1,12 +1,12 @@
 import { ProductCard } from "@/components/index";
 
-const BestSeller = () => {
+const RecentlyAdded = () => {
   return (
     <div className="py-10">
       <div className="">
-        <h6 className="text-2xl font-[500] text-black">Best Seller</h6>
+        <h6 className="text-2xl font-[500] text-black">Recently Added</h6>
         <p className="text-sm text-gray-600 mt-[2px]">
-          Add bestselling products to weekly line up
+          Recently added to weekly line up
         </p>
       </div>
 
@@ -19,4 +19,4 @@ const BestSeller = () => {
   );
 };
 
-export default BestSeller;
+export default RecentlyAdded;
