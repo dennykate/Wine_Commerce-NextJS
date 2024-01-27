@@ -1,6 +1,7 @@
 import { BestSeller, Hero, InfoSection } from "@/components/home";
 
 const Home = () => {
+
   return (
     <>
       <Hero />
@@ -10,6 +11,7 @@ const Home = () => {
       </div>
     </>
   );
+
 };
 
 export default Home;
