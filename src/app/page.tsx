@@ -1,4 +1,4 @@
-import { BestSeller, Hero, InfoSection, PopularCategories } from "@/components/home";
+import { Banner, BestSeller, Hero, InfoSection, PopularCategories } from "@/components/home";
 
 const Home = () => {
 
@@ -9,6 +9,7 @@ const Home = () => {
         <InfoSection />
         <BestSeller />
         <PopularCategories/>
+        <Banner/>
       </div>
     </>
   );
