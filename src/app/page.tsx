@@ -1,4 +1,4 @@
-import { Hero, InfoSection } from "@/components/home";
+import { BestSeller, Hero, InfoSection } from "@/components/home";
 
 const Home = () => {
   return (
@@ -6,6 +6,7 @@ const Home = () => {
       <Hero />
       <div className="sm:px-4 px-2">
         <InfoSection />
+        <BestSeller />
       </div>
     </>
   );
