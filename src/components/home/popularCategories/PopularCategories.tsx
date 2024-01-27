@@ -12,7 +12,7 @@ const PopularCategories = () => {
         </p>
       </div>
 
-      <div className="mt-4 grid grid-cols-3 w-full gap-5">
+      <div className="mt-4 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full gap-5">
         {categories?.map(({ title, quantity, image }, i) => (
           <CategoryCard
             key={i}
