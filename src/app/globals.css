@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transition-300 {
+  @apply transition-all duration-300 ease-in-out;
+}

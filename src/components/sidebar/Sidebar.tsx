@@ -15,7 +15,7 @@ const Sidebar = ({ open, close }: PropsType) => {
       <div
         className={`max-w-[300px] min-w-[300px]  bg-white py-6 px-4 z-[1000] fixed top-0 left-0 h-screen ${
           open ? "translate-x-0" : "-translate-x-[100%]"
-        } transition-all duration-300 ease-in-out
+        } transition-300
       `}
       >
         <div className="w-full flex items-center justify-end">
@@ -28,9 +28,13 @@ const Sidebar = ({ open, close }: PropsType) => {
           {navbarData?.map((data, index) => (
             <div
               key={index}
-              className="w-full py-4 border-b border-black border-opacity-20 flex items-center gap-2 "
+              className={`w-full py-4 flex items-center gap-2 ${
+                index === 0
+                  ? "border-primary-500 border-b-2 text-primary-500"
+                  : "border-b  border-black border-opacity-20 text-black"
+              }`}
             >
-              <p className="text-base text-black">{data?.name}</p>
+              <p className="text-base ">{data?.name}</p>
 
               {data?.hasChildren && (
                 <div className="py-1 px-3 bg-red-700 text-white rounded-md text-xs font-[500]">

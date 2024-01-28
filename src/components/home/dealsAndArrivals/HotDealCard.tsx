@@ -72,7 +72,7 @@ const HotDealsCard = () => {
 
           <button
             className="text-sm font-[500] mt-2 bg-black text-white w-full py-3 rounded-sm
-           hover:bg-primary-500 transition-all duration-300 ease-in-out"
+           hover:bg-primary-500 transition-300"
           >
             Add to cart
           </button>

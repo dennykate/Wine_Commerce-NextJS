@@ -35,7 +35,14 @@ const BaseNavbar = ({ className, open }: PropsType) => {
           />
         </div>
         {navbarData?.map((data, index) => (
-          <button key={index} className="flex items-center gap-[2px]">
+          <button
+            key={index}
+            className={`flex items-center gap-[2px] border-b-2  ${
+              index === 0
+                ? "border-primary-500 text-primary-500"
+                : "border-transparent hover:border-primary-500 hover:text-primary-500"
+            }`}
+          >
             <p className="text-sm font-[500]">{data?.name}</p>
             {data?.hasChildren && <IoChevronDown className="text-sm" />}
           </button>

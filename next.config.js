@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["ecolife.posthemes.com"],
+    domains: ["ecolife.posthemes.com", "i.postimg.cc"],
   },
 };
 
