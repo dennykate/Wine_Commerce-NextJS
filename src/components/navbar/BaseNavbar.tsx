@@ -1,3 +1,5 @@
+"use client";
+
 import { CSSProperties } from "react";
 import { IoChevronDown, IoSearch } from "react-icons/io5";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -5,6 +7,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { RiCustomerService2Line, RiHandbagLine } from "react-icons/ri";
 import Image from "next/image";
 import navbarData from "@/data/navbarData";
+import { useRouter } from "next/navigation";
 
 interface PropsType {
   className: CSSProperties | string;
@@ -12,6 +15,8 @@ interface PropsType {
 }
 
 const BaseNavbar = ({ className, open }: PropsType) => {
+  const router = useRouter();
+
   return (
     <div className={`${className}`}>
       <div className="md:hidden flex sm:gap-6 gap-4">
@@ -61,6 +66,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
 
       <div className="flex items-center sm:gap-6 gap-4">
         <button
+          onClick={() => router.push("search")}
           className="w-[40px] h-[40px] bg-primary-500 md:flex hidden justify-center items-center 
     rounded-full"
         >
@@ -80,7 +86,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
           <FaRegUserCircle className="sm:text-3xl text-2xl text-black" />
         </button>
 
-        <button className="relative">
+        <button className="relative" onClick={() => router.push("checkout")}>
           <RiHandbagLine className="sm:text-3xl text-2xl text-black" />
 
           <div
