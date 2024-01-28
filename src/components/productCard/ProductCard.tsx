@@ -85,10 +85,10 @@ const ProductCard = () => {
               </button>
 
               <div className="flex items-center gap-4">
-                <button>
+                <button className="text-black hover:text-primary-500">
                   <IoIosHeartEmpty className="text-lg" />
                 </button>
-                <button>
+                <button className="text-black hover:text-primary-500">
                   <BsRepeat className="text-lg" />
                 </button>
               </div>

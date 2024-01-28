@@ -16,8 +16,6 @@ const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
   const scrollOffset = useScrollOffset();
 
-  console.log("scrollOffset", scrollOffset);
-
   return (
     <>
       <NavbarInfo />
@@ -35,7 +33,7 @@ const Navbar = () => {
           scrollOffset > 400
             ? "translate-y-0 opacity-100"
             : "translate-y-[-100%] opacity-0"
-        } transition-all duration-300 ease-in-out`}
+        } transition-300`}
         open={() => setOpen(true)}
       />
     </>

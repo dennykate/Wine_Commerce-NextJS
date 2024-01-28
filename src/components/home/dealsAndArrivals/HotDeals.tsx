@@ -54,7 +54,7 @@ const HotDeals = () => {
           <button
             className="w-[30px] h-[30px] border border-black border-opacity-20 rounded-full
              flex justify-center items-center hover:bg-primary-500 text-gray-500 hover:text-white
-             transition-all duration-300 ease-in-out"
+             transition-300"
             onClick={() => sliderRef?.current?.slickPrev()}
           >
             <IoChevronBack className="text-sm " />
@@ -63,7 +63,7 @@ const HotDeals = () => {
           <button
             className="w-[30px] h-[30px] border border-black border-opacity-20 rounded-full
              flex justify-center items-center hover:bg-primary-500 text-gray-500 hover:text-white
-             transition-all duration-300 ease-in-out"
+             transition-300"
             onClick={() => sliderRef?.current?.slickNext()}
           >
             <IoChevronBack className="text-sm rotate-180" />

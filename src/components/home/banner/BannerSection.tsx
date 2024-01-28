@@ -10,7 +10,7 @@ const BannerSection = () => {
           width={1024}
           height={512}
           alt=""
-          className="w-full h-full hover:scale-105 transition-all duration-300 ease-in-out object-cover"
+          className="w-full h-full hover:scale-105 transition-300 object-cover"
         />
       </div>
 
@@ -20,7 +20,7 @@ const BannerSection = () => {
           width={1024}
           height={512}
           alt=""
-          className="w-full h-full hover:scale-105 transition-all duration-300 ease-in-out object-cover"
+          className="w-full h-full hover:scale-105 transition-300 object-cover"
         />
       </div>
 
@@ -30,7 +30,7 @@ const BannerSection = () => {
           width={1024}
           height={512}
           alt=""
-          className="w-full h-full hover:scale-105 transition-all duration-300 ease-in-out object-cover"
+          className="w-full h-full hover:scale-105 transition-300 object-cover"
         />
       </div>
     </div>

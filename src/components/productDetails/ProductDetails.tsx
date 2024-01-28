@@ -26,7 +26,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
       <div
         className={`fixed top-0 left-0 w-screen max-h-screen h-screen z-[1000] overflow-y-auto ${
           opened ? "translate-y-0" : "-translate-y-[100%]"
-        } transition-all duration-300 ease-in-out`}
+        } transition-300`}
       >
         <div
           className="max-w-5xl h-auto mx-auto bg-white rounded-md flex relative md:flex-row flex-col
@@ -114,7 +114,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
               >
                 <button
                   className="w-[30px] text-xl hover:bg-primary-500 text-black hover:text-white h-full 
-                flex justify-center items-center transition-all duration-300 ease-in-out "
+                flex justify-center items-center transition-300 "
                 >
                   -
                 </button>
@@ -124,7 +124,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 />
                 <button
                   className="w-[30px] text-xl hover:bg-primary-500 text-black hover:text-white h-full 
-                flex justify-center items-center transition-all duration-300 ease-in-out"
+                flex justify-center items-center transition-300"
                 >
                   +
                 </button>
@@ -132,7 +132,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
 
               <button
                 className="h-[50px] w-[200px] hover:bg-primary-500 text-black hover:text-white
-               font-semibold border border-black border-opacity-80 rounded-sm transition-all duration-300 ease-in-out
+               font-semibold border border-black border-opacity-80 rounded-sm transition-300
                hover:border-primary-500 "
               >
                 Add To Cart
@@ -140,7 +140,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
 
               <button
                 className="h-[50px] w-[50px] hover:bg-primary-500 text-black hover:text-white
-               font-semibold border border-black border-opacity-20 rounded-sm transition-all duration-300 ease-in-out
+               font-semibold border border-black border-opacity-20 rounded-sm transition-300
                hover:border-primary-500 flex justify-center items-center text-lg"
               >
                 <BsRepeat />
@@ -148,7 +148,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
 
               <button
                 className="h-[50px] w-[50px] hover:bg-primary-500 text-black hover:text-white
-               font-semibold border border-black border-opacity-20 rounded-sm transition-all duration-300 ease-in-out
+               font-semibold border border-black border-opacity-20 rounded-sm transition-300
                hover:border-primary-500 flex justify-center items-center text-lg"
               >
                 <IoIosHeartEmpty />
@@ -157,7 +157,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
 
             <button
               className="w-full h-[50px] bg-black text-white flex items-center justify-center rounded-sm
-            gap-2 mt-2 hover:bg-primary-500 transition-all duration-300 ease-in-out"
+            gap-2 mt-2 hover:bg-primary-500 transition-300"
             >
               <MdOutlineShoppingCart className="text-white text-xl" />
               <p className="text-base font-bold text-white">Buy Now</p>
@@ -172,21 +172,21 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 <button>
                   <ImFacebook
                     className="text-gray-400 text-lg hover:text-primary-500
-                   transition-all duration-300 ease-in-out"
+                   transition-300"
                   />
                 </button>
 
                 <button>
                   <ImTwitter
                     className="text-gray-400 text-lg hover:text-primary-500
-                   transition-all duration-300 ease-in-out"
+                   transition-300"
                   />
                 </button>
 
                 <button>
                   <FaInstagram
                     className="text-gray-400 text-lg hover:text-primary-500
-                   transition-all duration-300 ease-in-out"
+                   transition-300"
                   />
                 </button>
               </div>
