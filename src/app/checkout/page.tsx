@@ -1,4 +1,4 @@
-import { DevelopmentWarning } from "@/components";
+import { Header, Cart } from "@/components/checkout";
 import meta from "@/config/meta";
 
 export const metadata = {
@@ -15,9 +15,12 @@ export const metadata = {
 
 const Checkout = () => {
   return (
-    <div className="min-h-[calc(100vh-140px)] flex justify-center items-center flex-col">
-      <DevelopmentWarning />
-    </div>
+    <>
+      <Header />
+      <div className="sm:px-4 px-2">
+        <Cart />
+      </div>
+    </>
   );
 };
 
