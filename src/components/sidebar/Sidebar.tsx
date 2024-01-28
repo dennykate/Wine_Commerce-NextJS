@@ -43,7 +43,7 @@ const Sidebar = ({ open, close }: PropsType) => {
       </div>
 
       <div
-        className={`w-screen h-screen fixed top-0 left-0 z-[100] bg-black bg-opacity-20
+        className={`w-screen h-screen fixed top-0 left-0 z-[200] bg-black bg-opacity-20
       ${open ? "block" : "hidden"}`}
       />
     </>
