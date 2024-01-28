@@ -120,7 +120,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 </button>
                 <input
                   className="w-[60px] h-full border-r border-l border-black border-opacity-20 px-[25px]"
-                  value={1}
+                  defaultValue={1}
                 />
                 <button
                   className="w-[30px] text-xl hover:bg-primary-500 text-black hover:text-white h-full 

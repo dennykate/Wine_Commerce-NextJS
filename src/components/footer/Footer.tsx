@@ -29,6 +29,7 @@ const icons = [
     Icon: FaPinterestP,
   },
 ];
+
 const information = [
   { name: "Delivery" },
   { name: "About us" },
@@ -37,6 +38,7 @@ const information = [
   { name: "Sitemap" },
   { name: "Stores" },
 ];
+
 const contactLinks = [
   { name: "Legal Notice" },
   { name: "Price drop" },
@@ -57,7 +59,7 @@ const Footer = () => {
           <div className="w-[120px]">
             <Image
               src="/assets/images/logo_footer.png"
-              alt=""
+              alt="logo"
               width={1024}
               height={512}
             />
