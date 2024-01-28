@@ -1,7 +1,12 @@
 import Image from "next/image";
 import { Ratings } from "@/components";
+import { ProductCardType } from "@/types";
 
-const FeatureProductCard = () => {
+interface PropsType {
+  data: ProductCardType;
+}
+
+const FeatureProductCard = ({ data }: PropsType) => {
   return (
     <div
       className="min-h-[120px] p-4 border border-gray-200 rounded-md hover:border-primary-500 
@@ -9,8 +14,8 @@ const FeatureProductCard = () => {
     >
       <div className="h-full min-w-[92px] w-[92px] relative">
         <Image
-          src="https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
-          alt="product-1"
+          src={data?.backImage}
+          alt={data?.name}
           width={1024}
           height={1024}
           className="absolute top-0 left-0 opacity-0 group-hover:opacity-100
@@ -18,8 +23,8 @@ const FeatureProductCard = () => {
         />
 
         <Image
-          src="https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
-          alt="product-1"
+          src={data?.frontImage}
+          alt={data?.name}
           width={1024}
           height={1024}
         />
@@ -29,7 +34,7 @@ const FeatureProductCard = () => {
         <p className="text-[10px] text-gray-500 uppercase ">Manufacture 1</p>
 
         <h6 className="text-sm text-black font-[500] truncate  w-full">
-          Crispy Mixed Fruit Fruit Fruit
+          {data?.name}
         </h6>
 
         <Ratings count={5} />

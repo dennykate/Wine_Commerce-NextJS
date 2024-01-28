@@ -5,14 +5,22 @@ import { IoSearch } from "react-icons/io5";
 
 import { Ratings } from "@/components";
 import { CountDown } from "./";
+import { ProductCardType } from "@/types";
 
-const HotDealsCard = () => {
+interface PropsType {
+  data: ProductCardType;
+}
+
+const HotDealsCard = ({ data }: PropsType) => {
   return (
     <>
       <div className="p-2 border rounded-md border-primary-500 group overflow-hidden">
         <div className="w-full relative">
           <Image
-            src="https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
+            src={
+              data?.backImage ||
+              "https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
+            }
             alt="product-1"
             width={1024}
             height={1024}
@@ -21,7 +29,10 @@ const HotDealsCard = () => {
           />
 
           <Image
-            src="https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
+            src={
+              data?.frontImage ||
+              "https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
+            }
             alt="product-1"
             width={1024}
             height={1024}
@@ -50,7 +61,7 @@ const HotDealsCard = () => {
           <p className="text-[11px] text-gray-500 uppercase">Manufacture 1</p>
 
           <h6 className="text-base text-black font-[500]">
-            Crispy Mixed Fruit chips
+            {data?.name || "Crispy Mixed Fruit chips"}
           </h6>
 
           <Ratings count={5} />

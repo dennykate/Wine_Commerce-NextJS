@@ -1,4 +1,5 @@
 import { ProductCard } from "@/components";
+import getProductDummyData from "@/utilities/getProductDummyData";
 
 const NewArrivals = () => {
   return (
@@ -11,8 +12,8 @@ const NewArrivals = () => {
       </div>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-4">
-        {[0, 1, 2, 3, 4, 5, 6, 7].map((data, index) => (
-          <ProductCard key={index} />
+        {getProductDummyData(8).map((data, index) => (
+          <ProductCard data={data} key={index} />
         ))}
       </div>
     </div>
