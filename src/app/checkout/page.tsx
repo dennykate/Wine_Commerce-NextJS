@@ -1,4 +1,4 @@
-import { Header } from "@/components/checkout";
+import { Header, Cart } from "@/components/checkout";
 import meta from "@/config/meta";
 
 export const metadata = {
@@ -17,6 +17,9 @@ const Checkout = () => {
   return (
     <>
       <Header />
+      <div className="sm:px-4 px-2">
+        <Cart />
+      </div>
     </>
   );
 };
