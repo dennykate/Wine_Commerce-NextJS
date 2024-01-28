@@ -1,16 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { IoChevronDown, IoSearch } from "react-icons/io5";
-import { FaBarsStaggered } from "react-icons/fa6";
-import { FaRegUserCircle } from "react-icons/fa";
-import { RiCustomerService2Line, RiHandbagLine } from "react-icons/ri";
 
-import navbarData from "@/data/navbarData";
 import { NavbarInfo, BaseNavbar } from "./";
 import { Sidebar } from "../sidebar";
 import useScrollOffset from "@/hooks/useScrollOffset";
-import Image from "next/image";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);

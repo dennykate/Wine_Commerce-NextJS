@@ -2,7 +2,7 @@ import { DevelopmentWarning } from "@/components";
 import meta from "@/config/meta";
 
 export const metadata = {
-  title: `Checkout - ${meta.title}`,
+  title: `Search - ${meta.title}`,
   description: meta.description,
   openGraph: {
     title: meta.title,
@@ -13,7 +13,7 @@ export const metadata = {
   },
 };
 
-const Checkout = () => {
+const Search = () => {
   return (
     <div className="min-h-[calc(100vh-140px)] flex justify-center items-center flex-col">
       <DevelopmentWarning />
@@ -21,4 +21,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default Search;

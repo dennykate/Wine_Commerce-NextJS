@@ -80,7 +80,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
           <FaRegUserCircle className="sm:text-3xl text-2xl text-black" />
         </button>
 
-        <button className="relative ">
+        <button className="relative">
           <RiHandbagLine className="sm:text-3xl text-2xl text-black" />
 
           <div

@@ -1,4 +1,5 @@
 import { FeatureProductCard } from "@/components";
+import getProductDummyData from "@/utilities/getProductDummyData";
 
 const FeatureProducts = () => {
   return (
@@ -11,8 +12,8 @@ const FeatureProducts = () => {
       </div>
 
       <div className="w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 mt-4">
-        {[0, 1, 2, 3, 4, 5, 6, 7].map((data) => (
-          <FeatureProductCard key={data} />
+        {getProductDummyData(8).map((data,index) => (
+          <FeatureProductCard data={data} key={index} />
         ))}
       </div>
     </div>

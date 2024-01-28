@@ -2,51 +2,11 @@
 
 import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
-import { ImFacebook, ImTwitter, ImYoutube, ImWhatsapp } from "react-icons/im";
-import { FaInstagram, FaPinterestP } from "react-icons/fa";
 import Image from "next/image";
 import FooterLinksTitle from "./FooterLinksTitle";
 import FooterLinks from "./FooterLinks";
 import Search from "./FooterSearch";
-
-const icons = [
-  {
-    Icon: ImFacebook,
-  },
-  {
-    Icon: ImTwitter,
-  },
-  {
-    Icon: FaInstagram,
-  },
-  {
-    Icon: ImYoutube,
-  },
-  {
-    Icon: ImWhatsapp,
-  },
-  {
-    Icon: FaPinterestP,
-  },
-];
-
-const information = [
-  { name: "Delivery" },
-  { name: "About us" },
-  { name: "Secure payment" },
-  { name: "Contact us" },
-  { name: "Sitemap" },
-  { name: "Stores" },
-];
-
-const contactLinks = [
-  { name: "Legal Notice" },
-  { name: "Price drop" },
-  { name: "New products" },
-  { name: "Best sales" },
-  { name: "My account" },
-  { name: "Terms and conditions" },
-];
+import footerData from "@/data/footerData";
 
 const Footer = () => {
   return (
@@ -78,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="icons flex gap-5">
-            {icons.map(({ Icon }, i) => (
+            {footerData.icons.map(({ Icon }, i) => (
               <button key={i} className="hover:text-[#4FB68D]">
                 <Icon size={20} className="text-gray-600" />
               </button>
@@ -92,7 +52,7 @@ const Footer = () => {
         <div className="md:hidden block sm:w-1/2 w-full sm:mt-0 mt-5">
           <div className="w-full py-2">
             <FooterLinksTitle title="Information" />
-            <FooterLinks data={information} />
+            <FooterLinks data={footerData.information} />
           </div>
         </div>
       </div>
@@ -102,14 +62,14 @@ const Footer = () => {
           <div className="w-[25%] md:flex hidden gap-5">
             <div className="w-full py-2">
               <FooterLinksTitle title="Information" />
-              <FooterLinks data={information} />
+              <FooterLinks data={footerData.information} />
             </div>
           </div>
 
           <div className="md:w-[25%] sm:w-1/2 w-full flex gap-5">
             <div className="w-full py-2">
               <FooterLinksTitle title="Contact Links" />
-              <FooterLinks data={contactLinks} />
+              <FooterLinks data={footerData.contactLinks} />
             </div>
           </div>
 

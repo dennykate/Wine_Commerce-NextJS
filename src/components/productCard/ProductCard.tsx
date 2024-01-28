@@ -8,8 +8,13 @@ import { IoSearch } from "react-icons/io5";
 
 import ProductDetails from "../productDetails/ProductDetails";
 import { Ratings } from "@/components";
+import { ProductCardType } from "@/types";
 
-const ProductCard = () => {
+interface PropsType {
+  data: ProductCardType;
+}
+
+const ProductCard = ({ data }: PropsType) => {
   const [showDetails, setShowDetails] = useState<boolean>(false);
 
   return (
@@ -17,7 +22,10 @@ const ProductCard = () => {
       <div className="p-2 border border-gray-200 rounded-md hover:border-primary-500 group overflow-hidden">
         <div className="w-full relative">
           <Image
-            src="https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
+            src={
+              data?.backImage ||
+              "https://ecolife.posthemes.com/demo1/99-home_default/organic-fruit-snacks.jpg"
+            }
             alt="product-1"
             width={1024}
             height={1024}
@@ -26,7 +34,10 @@ const ProductCard = () => {
           />
 
           <Image
-            src="https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
+            src={
+              data?.frontImage ||
+              "https://ecolife.posthemes.com/demo1/58-home_default/solimo-premium-raisins.jpg"
+            }
             alt="product-1"
             width={1024}
             height={1024}
@@ -56,7 +67,7 @@ const ProductCard = () => {
           <p className="text-[11px] text-gray-500 uppercase">Manufacture 1</p>
 
           <h6 className="text-base text-black font-[500]">
-            Crispy Mixed Fruit chips
+            {data?.name || "Crispy Mixed Fruit chips"}
           </h6>
 
           <Ratings count={5} />

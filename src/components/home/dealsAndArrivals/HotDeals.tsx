@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { HotDealCard } from "./";
 import { useRef } from "react";
+import getProductDummyData from "@/utilities/getProductDummyData";
 
 const settings = {
   dots: false,
@@ -71,11 +72,11 @@ const HotDeals = () => {
         </div>
       </div>
 
-      <div className="mt-4 md:border-[1px] border-primary-500 border-none rounded-md overflow-hidden">
+      <div className="mt-4 rounded-md overflow-hidden ">
         <Slider ref={sliderRef as any} {...settings}>
-          {[0, 1, 2, 3, 4].map((data, index) => (
-            <div key={index} className="md:px-0 sm:px-2 px-0">
-              <HotDealCard key={index} />
+          {getProductDummyData(5).map((data, index) => (
+            <div key={index} className="px-1">
+              <HotDealCard data={data} key={index} />
             </div>
           ))}
         </Slider>
