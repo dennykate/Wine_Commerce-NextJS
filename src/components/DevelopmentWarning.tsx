@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DevelopmentWarning = () => {
   return (
-    <div>
+    <>
       <div className="w-[300px]">
         <Image
           src="https://i.postimg.cc/PJywKXFB/Create-bro.png"
@@ -14,7 +14,7 @@ const DevelopmentWarning = () => {
       <h6 className="text-xl font-bold">
         This functionality is still being developed.
       </h6>
-    </div>
+    </>
   );
 };
 
