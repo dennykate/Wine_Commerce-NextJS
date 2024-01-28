@@ -54,7 +54,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
         ))}
       </div>
 
-      <div className="w-[120px] md:hidden block">
+      <div className="w-[100px] md:hidden block">
         <Image
           src={"/assets/images/logo_footer.png"}
           alt="logo"

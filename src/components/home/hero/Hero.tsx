@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div
-      className="w-full sm:min-h-[calc(100vh-140px)] min-h-[calc(100vh-100px)]
+      className="w-full sm:min-h-[calc(100vh-140px)] min-h-[calc(100vh-60px)]
        bg-[url('/assets/images/hero_slider_1.jpg')] bg-center
       bg-cover flex items-start justify-center gap-4 flex-col sm:px-4 px-2"
     >
