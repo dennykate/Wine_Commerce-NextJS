@@ -53,6 +53,7 @@ const HotDeals = () => {
 
         <div className="flex items-center gap-2">
           <button
+            name="back"
             className="w-[30px] h-[30px] border border-black border-opacity-20 rounded-full
              flex justify-center items-center hover:bg-primary-500 text-gray-500 hover:text-white
              transition-300"
@@ -62,6 +63,7 @@ const HotDeals = () => {
           </button>
 
           <button
+            name="front"
             className="w-[30px] h-[30px] border border-black border-opacity-20 rounded-full
              flex justify-center items-center hover:bg-primary-500 text-gray-500 hover:text-white
              transition-300"

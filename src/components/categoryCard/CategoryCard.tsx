@@ -18,7 +18,10 @@ const CategoryCard = ({ title, quantity, image }: PropsType) => {
           {title}
         </a>
         <p className="text-gray-600 text-sm">{quantity} products</p>
-        <button className="flex gap-1 text-sm items-center hover:translate-x-2 hover:text-primary-500 transition-all duration-200 ease-in-out">
+        <button
+          name="view-all"
+          className="flex gap-1 text-sm items-center hover:translate-x-2 hover:text-primary-500 transition-all duration-200 ease-in-out"
+        >
           View all
           <IoMdArrowDroprightCircle className="text-primary-500" size={15} />
         </button>

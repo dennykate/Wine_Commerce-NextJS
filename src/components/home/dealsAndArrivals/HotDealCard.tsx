@@ -40,6 +40,7 @@ const HotDealsCard = ({ data }: PropsType) => {
 
           <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
             <button
+              name="search-button"
               className="w-[50px] h-[50px] flex bg-white justify-center items-center
             rounded-full text-black hover:bg-primary-500 hover:text-white transition-all
             duration-300 ease-in-out shadow-md border border-black border-opacity-20
@@ -82,6 +83,7 @@ const HotDealsCard = ({ data }: PropsType) => {
           </div>
 
           <button
+            name="add-to-cart"
             className="text-sm font-[500] mt-2 bg-black text-white w-full py-3 rounded-sm
            hover:bg-primary-500 transition-300"
           >

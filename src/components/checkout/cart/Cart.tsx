@@ -2,7 +2,7 @@ import { CartContainer, Checkout } from "./";
 
 const Cart = () => {
   return (
-    <div className="py-20 flex items-start gap-4 lg:flex-row flex-col">
+    <div className="sm:py-20 py-10 flex items-start gap-4 lg:flex-row flex-col">
       <CartContainer />
       <Checkout />
     </div>

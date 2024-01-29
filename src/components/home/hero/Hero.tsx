@@ -12,7 +12,7 @@ const Hero = () => {
       <p className="text-base text-gray-500 ">
         Free Shipping On Quilified Order Over 35$
       </p>
-      <button className="w-[140px] h-[40px] bg-primary-500 text-white rounded-full font-semibold">
+      <button name="shop-now" className="w-[140px] h-[40px] bg-primary-500 text-white rounded-full font-semibold">
         Shop Now
       </button>
     </div>

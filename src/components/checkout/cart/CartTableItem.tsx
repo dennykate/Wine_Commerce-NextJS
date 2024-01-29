@@ -39,18 +39,22 @@ const CartTableItem = ({ data }: PropsType) => {
       <div className="flex justify-start sm:w-[20%] w-[30%]">
         <div className="h-[40px] flex items-center">
           <input
+            id="quantity"
+            name="quantity"
             type="text"
             defaultValue={1}
             className="w-[50px] h-full px-4 border border-black border-opacity-20"
           />
           <div className="flex flex-col">
             <button
+            name="count-up"
               className="w-[20px] h-[20px] border border-black border-opacity-20 flex 
         justify-center items-center text-xs"
             >
               <IoChevronUp />
             </button>
             <button
+            name="count-down"
               className="w-[20px] h-[20px] border border-black border-opacity-20 flex 
         justify-center items-center text-xs"
             >

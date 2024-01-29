@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           <div className="icons flex gap-5">
             {footerData.icons.map(({ Icon }, i) => (
-              <button key={i} className="hover:text-[#4FB68D]">
+              <button name="footer-icon" key={i} className="hover:text-[#4FB68D]">
                 <Icon size={20} className="text-gray-600" />
               </button>
             ))}
