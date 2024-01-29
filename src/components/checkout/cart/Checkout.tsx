@@ -24,6 +24,7 @@ const Checkout = () => {
         <p className="text-sm ">Taxes: $0.00</p>
 
         <button
+        name="checkout"
           className="text-sm font-[500] mt-4 bg-black text-white w-full py-3 rounded-sm
            hover:bg-primary-500 transition-300"
         >

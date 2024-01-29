@@ -20,11 +20,11 @@ const BaseNavbar = ({ className, open }: PropsType) => {
   return (
     <div className={`${className}`}>
       <div className="md:hidden flex sm:gap-6 gap-4">
-        <button onClick={open}>
+        <button name="bar-btn" onClick={open}>
           <FaBarsStaggered className="sm:text-2xl text-xl text-black" />
         </button>
 
-        <button>
+        <button name="search-btn">
           <IoSearch className="sm:text-2xl text-xl text-black" />
         </button>
       </div>
@@ -41,6 +41,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
         </div>
         {navbarData?.map((data, index) => (
           <button
+            name="name-link"
             key={index}
             className={`flex items-center gap-[2px] border-b-2  ${
               index === 0
@@ -66,6 +67,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
 
       <div className="flex items-center sm:gap-6 gap-4">
         <button
+          name="search-btn"
           onClick={() => router.push("search")}
           className="w-[40px] h-[40px] bg-primary-500 md:flex hidden justify-center items-center 
     rounded-full"
@@ -73,7 +75,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
           <IoSearch className="text-lg text-white" />
         </button>
 
-        <button className="md:flex hidden items-end gap-[6px]">
+        <button name="call-btn" className="md:flex hidden items-end gap-[6px]">
           <RiCustomerService2Line className="text-black text-3xl" />
 
           <div className="flex flex-col items-start">
@@ -82,11 +84,15 @@ const BaseNavbar = ({ className, open }: PropsType) => {
           </div>
         </button>
 
-        <button>
+        <button name="user-account">
           <FaRegUserCircle className="sm:text-3xl text-2xl text-black" />
         </button>
 
-        <button className="relative" onClick={() => router.push("checkout")}>
+        <button
+          name="cart-btn"
+          className="relative"
+          onClick={() => router.push("checkout")}
+        >
           <RiHandbagLine className="sm:text-3xl text-2xl text-black" />
 
           <div

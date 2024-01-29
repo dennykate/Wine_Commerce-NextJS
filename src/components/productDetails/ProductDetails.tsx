@@ -32,7 +32,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
           className="max-w-5xl h-auto mx-auto bg-white rounded-md flex relative md:flex-row flex-col
          md:py-0 py-10"
         >
-          <button
+          <button name="close-btn"
             className="absolute sm:top-5 sm:right-5 top-6 right-6"
             onClick={close}
           >
@@ -53,7 +53,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
             </div>
             <div className="w-full h-auto grid grid-cols-4 py-4 gap-2">
               {productDetailsData?.images?.map((image, index) => (
-                <button
+                <button name="image-btn"
                   key={index}
                   className="border border-black border-opacity-20 hover:border-primary-500 rounded-md
                    overflow-hidden w-full"
@@ -96,7 +96,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
 
               <div className="flex items-center flex-wrap gap-2">
                 {productDetailsData?.variants?.map((data, index) => (
-                  <button
+                  <button name="product-details"
                     key={index}
                     className="px-3 py-[4px] text-sm font-[400] text-gray-600 border border-gray-300
                flex justify-center items-center hover:border-primary-500"
@@ -112,17 +112,19 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 className="flex items-center h-[50px] border border-black border-opacity-20 
               rounded-sm  overflow-hidden min-w-[120px]"
               >
-                <button
+                <button name="item-down"
                   className="w-[30px] text-xl hover:bg-primary-500 text-black hover:text-white h-full 
                 flex justify-center items-center transition-300 "
                 >
                   -
                 </button>
                 <input
+                  id="item-count"
+                  name="item-count"
                   className="w-[60px] h-full border-r border-l border-black border-opacity-20 px-[25px]"
                   defaultValue={1}
                 />
-                <button
+                <button name="item-up"
                   className="w-[30px] text-xl hover:bg-primary-500 text-black hover:text-white h-full 
                 flex justify-center items-center transition-300"
                 >
@@ -130,7 +132,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 </button>
               </div>
 
-              <button
+              <button name="add-to-cart"
                 className="h-[50px] w-[200px] hover:bg-primary-500 text-black hover:text-white
                font-semibold border border-black border-opacity-80 rounded-sm transition-300
                hover:border-primary-500 "
@@ -138,7 +140,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 Add To Cart
               </button>
 
-              <button
+              <button name="share-btn"
                 className="h-[50px] w-[50px] hover:bg-primary-500 text-black hover:text-white
                font-semibold border border-black border-opacity-20 rounded-sm transition-300
                hover:border-primary-500 flex justify-center items-center text-lg"
@@ -146,7 +148,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
                 <BsRepeat />
               </button>
 
-              <button
+              <button name="favourite-btn"
                 className="h-[50px] w-[50px] hover:bg-primary-500 text-black hover:text-white
                font-semibold border border-black border-opacity-20 rounded-sm transition-300
                hover:border-primary-500 flex justify-center items-center text-lg"
@@ -155,7 +157,7 @@ const ProductDetails = ({ opened, close }: PropsType) => {
               </button>
             </div>
 
-            <button
+            <button name="buy-now"
               className="w-full h-[50px] bg-black text-white flex items-center justify-center rounded-sm
             gap-2 mt-2 hover:bg-primary-500 transition-300"
             >
@@ -169,21 +171,21 @@ const ProductDetails = ({ opened, close }: PropsType) => {
               <p className="text-sm text-black font-[500]">Share : </p>
 
               <div className="flex items-center gap-4">
-                <button>
+                <button name="facebook-btn">
                   <ImFacebook
                     className="text-gray-400 text-lg hover:text-primary-500
                    transition-300"
                   />
                 </button>
 
-                <button>
+                <button name="twitter-btn">
                   <ImTwitter
                     className="text-gray-400 text-lg hover:text-primary-500
                    transition-300"
                   />
                 </button>
 
-                <button>
+                <button name="instagram-btn">
                   <FaInstagram
                     className="text-gray-400 text-lg hover:text-primary-500
                    transition-300"

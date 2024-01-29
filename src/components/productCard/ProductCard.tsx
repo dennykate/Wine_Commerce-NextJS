@@ -44,7 +44,7 @@ const ProductCard = ({ data }: PropsType) => {
           />
 
           <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            <button
+            <button name="search-btn"
               className="w-[50px] h-[50px] flex bg-white justify-center items-center
             rounded-full text-black hover:bg-primary-500 hover:text-white transition-all
             duration-300 ease-in-out shadow-md border border-black border-opacity-20
@@ -91,15 +91,15 @@ const ProductCard = ({ data }: PropsType) => {
           bg-white translate-y-[30px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100
           transition-all duration-200 ease-in-out"
             >
-              <button className="text-sm font-[500] text-gray-800 uppercase pb-[6px] border-b-[2px] border-gray-800">
+              <button name="add-to-cart" className="text-sm font-[500] text-gray-800 uppercase pb-[6px] border-b-[2px] border-gray-800">
                 Add to cart
               </button>
 
               <div className="flex items-center gap-4">
-                <button className="text-black hover:text-primary-500">
+                <button name="favourite-btn" className="text-black hover:text-primary-500">
                   <IoIosHeartEmpty className="text-lg" />
                 </button>
-                <button className="text-black hover:text-primary-500">
+                <button name="share-btn" className="text-black hover:text-primary-500">
                   <BsRepeat className="text-lg" />
                 </button>
               </div>

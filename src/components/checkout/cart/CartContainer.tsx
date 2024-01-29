@@ -9,12 +9,15 @@ const CartContainer = () => {
 
       <CartTable />
 
-      <button
-        className="text-sm font-[500] mt-4 bg-black text-white py-3 rounded-sm
+      <div className="flex justify-end">
+        <button
+        name="continue-shopping"
+          className="text-sm font-[500] mt-4 bg-black text-white py-3 rounded-sm
            hover:bg-primary-500 transition-300 w-[180px]"
-      >
-        Continue Shopping
-      </button>
+        >
+          Continue Shopping
+        </button>
+      </div>
     </div>
   );
 };

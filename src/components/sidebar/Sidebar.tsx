@@ -19,7 +19,7 @@ const Sidebar = ({ open, close }: PropsType) => {
       `}
       >
         <div className="w-full flex items-center justify-end">
-          <button onClick={close}>
+          <button onClick={close} name="close-btn">
             <MdClose className="text-2xl text-black" />
           </button>
         </div>
