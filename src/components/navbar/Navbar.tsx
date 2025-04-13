@@ -22,7 +22,7 @@ const Navbar = () => {
       />
 
       <BaseNavbar
-        className={`w-full bg-white flex items-center sm:h-[80px] h-[60px] justify-between px-4 fixed top-0 
+        className={`w-full bg-white border-b border-black border-opacity-5 shadow-sm flex items-center sm:h-[80px] h-[60px] justify-between px-4 fixed top-0 
         left-0 z-[100] ${
           scrollOffset > 400
             ? "translate-y-0 opacity-100"

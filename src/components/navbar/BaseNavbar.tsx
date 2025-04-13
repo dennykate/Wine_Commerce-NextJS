@@ -8,6 +8,7 @@ import { RiCustomerService2Line, RiHandbagLine } from "react-icons/ri";
 import Image from "next/image";
 import navbarData from "@/data/navbarData";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface PropsType {
   className: CSSProperties | string;
@@ -29,8 +30,8 @@ const BaseNavbar = ({ className, open }: PropsType) => {
         </button>
       </div>
 
-      <div className="md:flex hidden items-center gap-6 ">
-        <div className="w-[120px]">
+      <div className="md:flex hidden items-center gap-6">
+        <Link href="/" className="w-[120px]">
           <Image
             src={"/assets/images/logo_footer.png"}
             alt="logo"
@@ -38,7 +39,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
             height={512}
             className="w-full object-cover"
           />
-        </div>
+        </Link>
         {navbarData?.map((data, index) => (
           <button
             name="name-link"
@@ -55,7 +56,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
         ))}
       </div>
 
-      <div className="w-[100px] md:hidden block">
+      <Link href="/" className="w-[100px] md:hidden block">
         <Image
           src={"/assets/images/logo_footer.png"}
           alt="logo"
@@ -63,7 +64,7 @@ const BaseNavbar = ({ className, open }: PropsType) => {
           height={512}
           className="w-full object-cover"
         />
-      </div>
+      </Link>
 
       <div className="flex items-center sm:gap-6 gap-4">
         <button

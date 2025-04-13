@@ -11,8 +11,8 @@ const DevelopmentWarning = () => {
           height={1024}
         />
       </div>
-      <h6 className="text-xl font-bold text-center">
-        This functionality is still being developed.
+      <h6 className="text-xl font-normal text-center">
+        This feature is still being developed.
       </h6>
     </>
   );

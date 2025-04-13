@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CartTable from "./CartTable";
 
 const CartContainer = () => {
@@ -10,13 +11,13 @@ const CartContainer = () => {
       <CartTable />
 
       <div className="flex justify-end">
-        <button
-        name="continue-shopping"
+        <Link
+          href="/"
           className="text-sm font-[500] mt-4 bg-black text-white py-3 rounded-sm
-           hover:bg-primary-500 transition-300 w-[180px]"
+           hover:bg-primary-500 transition-300 w-[180px] flex justify-center items-center"
         >
           Continue Shopping
-        </button>
+        </Link>
       </div>
     </div>
   );
